@@ -8,6 +8,6 @@ public class Main {
         ApplicationContext context=new ClassPathXmlApplicationContext("refconfig.xml");
         adi a= (adi)context.getBean("firstAdi");
         prachi p=(prachi) context.getBean("firstPrachi");
-        System.out.println(a.getBebo());
+        System.out.println(a);
     }
 }

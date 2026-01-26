@@ -1,10 +1,10 @@
 package org.demo.practical;
 
 public class prachi {
-    private String s;
+    private String says;
 
-    public prachi(String s) {
-        this.s = s;
+    public prachi(String says) {
+        this.says = says;
     }
 
     public prachi() {
@@ -13,15 +13,15 @@ public class prachi {
     @Override
     public String toString() {
         return "prachi{" +
-                "s='" + s + '\'' +
+                "says='" + says + '\'' +
                 '}';
     }
 
-    public String getS() {
-        return s;
+    public String getSays() {
+        return says;
     }
 
-    public void setS(String s) {
-        this.s = s;
+    public void setSays(String says) {
+        this.says = says;
     }
 }
