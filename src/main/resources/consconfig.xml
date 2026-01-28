@@ -7,16 +7,19 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
-        <context:component-scan base-package="org.demo.spring"/>
 
-    <bean class="org.demo.practical.prachi" name="firstPrachi">
-        <property name="says" value="I love you na"/>
+    <context:component-scan base-package="org.demo.spring"/>
+    <context:annotation-config />
+    <bean class="org.demo.practical.constructorInjection.first" name="firstBean">
+
+        <constructor-arg value="Aditya"/>
+        <constructor-arg value="26" type="int"/>
+        <constructor-arg>
+            <list>
+                <value>Java</value>
+                <value>Spring</value>
+                <value>Hibernate</value>
+            </list>
+        </constructor-arg>
     </bean>
-    <bean class="org.demo.practical.adi" name="firstAdi">
-        <property name="age" value="26"/>
-        <property name="bebo" ref="firstPrachi" />
-
-    </bean>
-
-
 </beans>
